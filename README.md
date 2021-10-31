@@ -35,6 +35,10 @@ exposure risks. The pace of hotspot notifications can mean essential information
 
 - `ng new service services/service_name`
 
+## Hint
+
+- View readme in VSCode `ctr-shift-p` type `Markdown: Open Preview to the side`
+
 # Covidify
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
