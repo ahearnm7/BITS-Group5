@@ -26,6 +26,7 @@ contains a database of covid hotspots and uses data visualisation and time serie
 We have found as a group that all the data surrounding covid can become overwhelming and it is difficult to find the information you need to make informed decisions about your
 exposure risks. The pace of hotspot notifications can mean essential information gets lost in the noise.
 
+
 ## Adding Features
 
 - `ng new component views/feature/feature_name`
@@ -66,3 +67,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+
