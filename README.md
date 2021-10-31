@@ -24,4 +24,4 @@ contains a database of covid hotspots and uses data visualisation and time serie
 ## <span style="color:#0a95ff">Project Motivation</span>
 
 We have found as a group that all the data surrounding covid can become overwhelming and it is difficult to find the information you need to make informed decisions about your
-exposure risks. The pace of hotspot notifications can mean essential information gets lost in the noise.
+exposure risks. The pace of hotspot notifications can mean essential information gets lost in the noise. tester test tester test tetst tester
