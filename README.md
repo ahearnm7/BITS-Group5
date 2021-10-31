@@ -26,6 +26,14 @@ contains a database of covid hotspots and uses data visualisation and time serie
 We have found as a group that all the data surrounding covid can become overwhelming and it is difficult to find the information you need to make informed decisions about your
 exposure risks. The pace of hotspot notifications can mean essential information gets lost in the noise.
 
+## Adding Features
+
+- ng new component views/<feature>/<feature_name>
+
+## Adding Service for data
+
+- ng new service services/<service_name>
+
 # Covidify
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
