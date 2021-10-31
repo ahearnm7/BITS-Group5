@@ -28,11 +28,11 @@ exposure risks. The pace of hotspot notifications can mean essential information
 
 ## Adding Features
 
-- ng new component views/<feature>/<feature_name>
+- ng new component views/feature/feature_name
 
 ## Adding Service for data
 
-- ng new service services/<service_name>
+- ng new service services/service_name
 
 # Covidify
 
