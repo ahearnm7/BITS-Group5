@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { background-color: lightgray; margin: 0; font-family: Calibri, "Calibri Body", calibri light; }
+
+
+/* Matthew's Changes */
+
+
+/* ========
+Typography
+======== */
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 12px;
+}
+a {
+  color: orange;
+}
+b {
+    color: darkorange;
+  }
+
+/* ========
+Layout
+======== */
+
+/*header {
+    background-color: #588C94;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+} */
+
+/*footer {
+   background-color: #1D3C41;
+  color: #fff;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 200px;
+} */
+
+.box-heading {
+    background-color: white;
+    color: #1214AC;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 2px #333333;
+     
+}
+.box-info {
+    background-color: white;
+    color: #333333;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 2px #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.box-search {
+    background-color: #F2F2F2;
+    color: #333333;
+    text-align: center;
+ 
+    box-shadow: 0 0 2px #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.columns {
+    display: flex;
+    max-height: 100%;
+}
+
+.column1 {
+    margin: 0 5px;
+    width: 33%;
+}
+.column2 {
+    margin: 0 5px;
+    width: 66%;
+    
+}
