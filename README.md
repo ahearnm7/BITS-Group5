@@ -30,14 +30,12 @@ exposure risks. The pace of hotspot notifications can mean essential information
 
 ## Adding Features
 
-- `ng new component views/feature/feature_name`
+- `ng generate component views/feature/feature_name`
 - main view at Dashboard
 
 ## Adding Service for data
 
-- `ng new service services/service_name`
-
-
+- `ng generate service services/service_name`
 
 
 ## Notes
