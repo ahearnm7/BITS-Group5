@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "search map map map"
+    "chart map  map map"
+    "stats map map map"
+    "stats map map map";
+  height: calc(100% - 47px);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+app-chartdaily {
+  grid-area: chart;
+}
+
+app-location-search {
+  grid-area: stats;
+}
+
+// Map placeholder area
+.map_placeholder {
+  grid-area: map;
+  background-color: rgb(127, 208, 211);
+}
+// Search placeholder area
+// .search_placeholder {
+//   grid-area: search;
+//   background-color: rgb(226, 179, 118);
+// }
