@@ -4,7 +4,8 @@
 
 ## <span style="color:#0a95ff">Data Visualization Project</span>
 
-**Covidify** is a risk assessment data visualization web application that allows users to quantify their potential risk based on Geo position and time of day. The web application
+**Covidify** is a very big risk assessment data visualization web application that allows users to quantify their potential risk based on Geo position and time of day. The web application
+
 contains a database of covid hotspots and uses data visualisation and time series data to present risk factors to the user based on the location and time they have nominated.
 
 ## <span style="color:#0a95ff">The Team</span>
