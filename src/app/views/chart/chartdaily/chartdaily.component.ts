@@ -7,22 +7,30 @@ import { Label, Colors } from 'ng2-charts';
   styleUrls: ['./chartdaily.component.scss']
 })
 export class ChartdailyComponent implements OnInit {
-  barChartData: ChartDataSets[] = [{ data: [30, 50, 50, 60, 50, 30, 50, 52, 52], label: 'Line', type: "line" },
-  { data: [0, 65, 59, 80, 81, 56, 55, 40, 0], label: 'Series A' },
-  { data: [0, 28, 48, 40, 19, 86, 27, 90, 0], label: 'Series B' },
+
+  barChartData: ChartDataSets[] = [{ data: [30, 50, 50, 60, 60, 65, 50, 52, 60, 50, 50, 50, 40, 38], label: 'Average Cases', type: "line" },
+  { data: [0, 65, 59, 60, 70, 88, 75, 77, 59, 55, 55, 54, 40, 0], label: 'Local Cases' }
+
 
   ];
-  barChartLabels: Label[] = ['FirstPlaceholder', '2006', '2007', '2008', '2009', '2010', '2011', '2012', 'LastPlaceholder'];
+  barChartLabels: Label[] = ['FirstPlaceholder', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'LastPlaceholder'];
   barChartOptions: ChartOptions = {
     responsive: true,
     showLines: true,
+    maintainAspectRatio: true,
+    title: {
+      text: 'Local Monthly Cases',
+      display: true
+    },
 
     // We use these empty structures as placeholders for dynamic theming.
     scales: {
       xAxes: [{
         ticks: {
-          min: '2006',
-          max: '2012',
+
+          min: 'Jan',
+          max: 'Dec',
+
         }
       }], yAxes: [{
         ticks: {
