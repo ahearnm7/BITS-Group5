@@ -36,9 +36,14 @@ exposure risks. The pace of hotspot notifications can mean essential information
 
 - `ng new service services/service_name`
 
-## Hint
+
+
+
+## Notes
 
 - View readme in VSCode `ctr-shift-p` type `Markdown: Open Preview to the side`
+- CSS Grid styling at [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 
 # Covidify
 
@@ -66,5 +71,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+# To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
