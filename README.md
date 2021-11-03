@@ -4,7 +4,8 @@
 
 ## <span style="color:#0a95ff">Data Visualization Project</span>
 
-**Covidify** is a risk assessment data visualization web application that allows users to quantify their potential risk based on Geo position and time of day. The web application
+**Covidify** is a very big risk assessment data visualization web application that allows users to quantify their potential risk based on Geo position and time of day. The web application
+
 contains a database of covid hotspots and uses data visualisation and time series data to present risk factors to the user based on the location and time they have nominated.
 
 ## <span style="color:#0a95ff">The Team</span>
@@ -26,6 +27,7 @@ contains a database of covid hotspots and uses data visualisation and time serie
 We have found as a group that all the data surrounding covid can become overwhelming and it is difficult to find the information you need to make informed decisions about your
 exposure risks. The pace of hotspot notifications can mean essential information gets lost in the noise.
 
+
 ## Adding Features
 
 - `ng new component views/feature/feature_name`
@@ -35,10 +37,14 @@ exposure risks. The pace of hotspot notifications can mean essential information
 
 - `ng new service services/service_name`
 
+
+
+
 ## Notes
 
 - View readme in VSCode `ctr-shift-p` type `Markdown: Open Preview to the side`
 - CSS Grid styling at [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 
 # Covidify
 
@@ -66,4 +72,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
+
+
+
 # To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
