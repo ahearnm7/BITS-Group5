@@ -38,8 +38,6 @@ exposure risks. The pace of hotspot notifications can mean essential information
 - `ng generate service services/service_name`
 
 
-
-
 ## Notes
 
 - View readme in VSCode `ctr-shift-p` type `Markdown: Open Preview to the side`
