@@ -7,6 +7,7 @@ import { Label, Colors } from 'ng2-charts';
   styleUrls: ['./chartdaily.component.scss']
 })
 export class ChartdailyComponent implements OnInit {
+
   barChartData: ChartDataSets[] = [{ data: [30, 50, 50, 60, 60, 65, 50, 52, 60, 50, 50, 50, 40, 38], label: 'Average Cases', type: "line" },
   { data: [0, 65, 59, 60, 70, 88, 80, 77, 59, 55, 55, 54, 40, 0], label: 'Local Cases' }
 
@@ -21,12 +22,15 @@ export class ChartdailyComponent implements OnInit {
       text: 'Local Monthly Cases',
       display: true
     },
+
     // We use these empty structures as placeholders for dynamic theming.
     scales: {
       xAxes: [{
         ticks: {
+
           min: 'Jan',
           max: 'Dec',
+
         }
       }], yAxes: [{
         ticks: {
