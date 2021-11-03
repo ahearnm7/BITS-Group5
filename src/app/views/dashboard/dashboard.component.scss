@@ -14,13 +14,18 @@
 app-chartdaily {
   grid-area: chart;
 }
+
+app-location-search {
+  grid-area: stats;
+}
+
 // Map placeholder area
 .map_placeholder {
   grid-area: map;
   background-color: rgb(127, 208, 211);
 }
 // Search placeholder area
-.search_placeholder {
-  grid-area: search;
-  background-color: rgb(226, 179, 118);
-}
+// .search_placeholder {
+//   grid-area: search;
+//   background-color: rgb(226, 179, 118);
+// }
