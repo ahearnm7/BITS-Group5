@@ -10,6 +10,7 @@ import { ChartdailyComponent } from './views/chart/chartdaily/chartdaily.compone
 import { ChartsModule } from 'ng2-charts';
 import { NavComponent } from './views/nav/nav/nav.component';
 import { LocationSearchComponent } from './views/location/location-search/location-search.component';
+import { GmapComponent } from './views/map/gmap/gmap.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { LocationSearchComponent } from './views/location/location-search/locati
     DashboardComponent,
     ChartdailyComponent,
     NavComponent,
-    LocationSearchComponent
+    LocationSearchComponent,
+    GmapComponent
   ],
   imports: [
     BrowserModule,
