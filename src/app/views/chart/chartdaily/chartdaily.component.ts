@@ -9,10 +9,7 @@ import { Label, Colors } from 'ng2-charts';
 export class ChartdailyComponent implements OnInit {
 
   barChartData: ChartDataSets[] = [{ data: [30, 50, 50, 60, 60, 65, 50, 52, 60, 50, 50, 50, 40, 38], label: 'Average Cases', type: "line" },
-  { data: [0, 65, 59, 60, 70, 88, 75, 77, 59, 55, 55, 54, 40, 0], label: 'Local Cases' }
-
-
-  ];
+  { data: [0, 65, 59, 60, 70, 88, 75, 77, 59, 55, 55, 54, 40, 0], label: 'Local Cases' }];
   barChartLabels: Label[] = ['FirstPlaceholder', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'LastPlaceholder'];
   barChartOptions: ChartOptions = {
     responsive: true,

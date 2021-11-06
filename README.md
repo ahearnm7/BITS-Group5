@@ -4,18 +4,19 @@
 
 ## <span style="color:#0a95ff">Data Visualization Project</span>
 
-**Covidify** is a risk assessment data visualization web application that allows users to quantify their potential risk based on Geo position and time of day. The web application
+**Covidify** is a very big risk assessment data visualization web application that allows users to quantify their potential risk based on Geo position and time of day. The web application
+
 contains a database of covid hotspots and uses data visualisation and time series data to present risk factors to the user based on the location and time they have nominated.
 
 ## <span style="color:#0a95ff">The Team</span>
 
-- Matthew Ahearn, s3884661,
+- Matthew Ahearn, s3884661
 
-- William Prebendarcik, s3912780,
+- William Prebendarcik, s3912780
 
-- Paul Bedward, s3338811,
+- Paul Bedward, s3338811
 
-- Brian Cusack, s3407813,
+- Brian Cusack, s3407813
 
 - Daniel Scarfe, s3872217
 
@@ -29,14 +30,12 @@ exposure risks. The pace of hotspot notifications can mean essential information
 
 ## Adding Features
 
-- `ng new component views/feature/feature_name`
+- `ng generate component views/feature/feature_name`
 - main view at Dashboard
 
 ## Adding Service for data
 
-- `ng new service services/service_name`
-
-
+- `ng generate service services/service_name`
 
 
 ## Notes
