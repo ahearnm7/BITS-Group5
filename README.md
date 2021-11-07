@@ -10,13 +10,13 @@ contains a database of covid hotspots and uses data visualisation and time serie
 
 ## <span style="color:#0a95ff">The Team</span>
 
-- Matthew Ahearn, s3884661,
+- Matthew Ahearn, s3884661
 
-- William Prebendarcik, s3912780,
+- William Prebendarcik, s3912780
 
-- Paul Bedward, s3338811,
+- Paul Bedward, s3338811
 
-- Brian Cusack, s3407813,
+- Brian Cusack, s3407813
 
 - Daniel Scarfe, s3872217
 
