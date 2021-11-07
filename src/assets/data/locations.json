@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Coles",
+      "suburb": "Northcote",
+      "postcode": 3070,
+      "lastExposure": "15/10/21",
+      "monthExposure": 5,
+      "totalExposure": 15,
+      "timeExposure": 1900
+    },
+    {
+        "name": "Bunnings",
+        "suburb": "Preston",
+        "postcode": 3072,
+        "lastExposure": "05/11/21",
+        "monthExposure": 7,
+        "totalExposure": 22,
+        "timeExposure": 1400
+    }
+]
+
+
