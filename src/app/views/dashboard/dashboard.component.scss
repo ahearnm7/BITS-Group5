@@ -19,11 +19,15 @@ app-location-search {
   grid-area: stats;
 }
 
+app-hello-world {
+
+  grid-area: map;}
+
 // Map placeholder area
-.map_placeholder {
-  grid-area: map;
-  background-color: rgb(127, 208, 211);
-}
+//.map_placeholder {
+//  grid-area: map;
+//  background-color: rgb(127, 208, 211);
+//}
 // Search placeholder area
 // .search_placeholder {
 //   grid-area: search;
