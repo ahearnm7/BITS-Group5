@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "covisulisers": {
+      "hosting": {
+        "Covidify": [
+          "covidify"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "covisulisers"
+  }
+}
