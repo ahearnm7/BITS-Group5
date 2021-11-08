@@ -24,8 +24,8 @@ export class HelloWorldComponent implements OnInit {
 
     const mapOptions: google.maps.MapOptions = {
       // Centered to Hyderabad, India
-      center: new google.maps.LatLng(17.412127, 78.474921),
-      zoom: 15,
+      center: new google.maps.LatLng(-37.81513161171227, 144.93942835432566),
+      zoom: 10,
     };
 
     this.map = new google.maps.Map(this.googleMapRef.nativeElement, mapOptions);
