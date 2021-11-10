@@ -61,8 +61,6 @@ export class ChartdailyComponent implements OnInit {
 
   constructor(firestore: Firestore) {
 
-    const col = collection(firestore, 'CaseNumbers');
-
     // ---  Set collection doc
     // const datachart = doc(col);
     // setDoc(doc(col, 'datachart'), { data: this.barChartData });
