@@ -12,6 +12,7 @@ export interface Item { name: string; }
 })
 export class ChartdailyComponent implements OnInit {
 
+
   barChartData: ChartDataSets[] = [];
   barChartLabels: Label[] = ['FirstPlaceholder', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'LastPlaceholder'];
   barChartOptions: ChartOptions = {

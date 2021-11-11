@@ -3,6 +3,7 @@
  <!--Box 1 - Search Bar-->
 <div class="box-info">
     <div class="box-search">
+
       <input id="name" type="text" [formControl]="name" placeholder="Search for location..">
       <button (click)="updateName()">Search</button>
     </div>
@@ -11,6 +12,7 @@
   <!--Box 2 - Heading info-->
   <div class="box-heading">
     <h2>
+
       <p>{{locations[pos].name}}</p>
       <p>{{locations[pos].suburb}}</p>
       <p>{{locations[pos].postcode}}</p>
@@ -41,6 +43,52 @@
 
 </body>
 
+  <script>
+    var f = document.getElementById('form');
+    var q = document.getElementById('query');
 
+    // Add function here to search array and return array position? //
+    // How do I link location.ts class/array here? //
+    // Should I use locations.json instead? //
 
+    // const google = 'https://www.google.com/search?q=site%3A+';
+    // const site = 'pagedart.com';
+
+    // function submitted(event) {
+    //   event.preventDefault();
+    //   const url = google + site + '+' + q.value;
+    //   const win = window.open(url, '_blank');
+    //   win.focus();
+    // }
+
+    function updateLocation() {
+        var x = document.getElementById("search").value
     
+        if (x == "Coles") {
+
+        }
+
+        if (x == "Bunnings") {
+
+        }
+
+        else {
+
+        }
+
+    x.addEventListener('submit', submitted);
+    }
+  </script>
+
+</body>
+
+
+<!-- <script>
+    window.onload = function(){
+        var name = prompt("What's your name?");
+        var lengthOfName = name.length
+    
+        document.getElementById('output').innerHTML = lengthOfName;
+    };
+    </script> -->
+ 
