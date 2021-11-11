@@ -1,3 +1,4 @@
+
 // import * as internal from "stream";
 
 //Create new class Location and Constructor
@@ -89,6 +90,7 @@ export class Location {
 //     new Location("Bunnings", "Preston", 3072, "1/11/21", 7, 44, 1400)  
 // ];
 
+
 //Search Function
 // var input: string;
 // var pos: number;
@@ -105,4 +107,6 @@ export class Location {
     
 // }
 // })
+
 }
+
