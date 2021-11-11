@@ -20,6 +20,9 @@ name = new FormControl('');
 
 pos: any = 1;
 
+search: any;
+result: any;
+
   constructor(private locationsService:LocationsService) { }
 
   ngOnInit(): void {
@@ -31,5 +34,24 @@ pos: any = 1;
     
   }
 
+  //  function searchMatch(ilocation) {
+  //   return this.locations.name === 'Coles';
+  // }
 
-}
+  // updateName2() {
+
+  //    this.search = this.name.value;
+  //    this.result = this.locations.findIndex(this.search);
+  //    this.pos = this.result;
+
+
+    //  this.result = this.locations.findIndex(function(item) {
+    //    if (this.search == this.locations.name) return true;
+    //  }, this.locations);
+
+
+
+  }
+
+
+
