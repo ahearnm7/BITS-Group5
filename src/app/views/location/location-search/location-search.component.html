@@ -1,4 +1,4 @@
- <body>
+
 
  <!--Box 1 - Search Bar-->
 <div class="box-info">
@@ -6,6 +6,9 @@
 
       <input id="name" type="text" [formControl]="name" placeholder="Search for location..">
       <button (click)="updateName()">Search</button>
+      {{search}}
+      {{result}}
+      {{pos}}
     </div>
     </div>
 
@@ -41,7 +44,6 @@
     </h3>
   </div>
 
-</body>
 
   <script>
     var f = document.getElementById('form');
@@ -80,7 +82,7 @@
     }
   </script>
 
-</body>
+
 
 
 <!-- <script>
