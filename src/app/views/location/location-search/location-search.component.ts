@@ -64,8 +64,7 @@ result: any;
 
   //  function searchMatch(ilocation) {
   //   return this.locations.name === 'Coles';
-  // }
-
+ 
   updateName2() {
 
      this.search = this.name.value;
@@ -77,6 +76,12 @@ result: any;
 
    this.result = this.locations.findIndex(locations => locations.name == this.search);
     this.pos = this.result;
+    
+  // updateName2() {
+
+  //    this.search = this.name.value;
+  //    this.result = this.locations.findIndex(this.search);
+  //    this.pos = this.result;
 
 
     //  this.result = this.locations.findIndex(function(item) {
@@ -91,4 +96,7 @@ result: any;
 //  }
 
 }
+
+=======
+
 

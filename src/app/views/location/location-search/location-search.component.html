@@ -1,4 +1,19 @@
 
+ <!--Box 1 - Search Bar-->
+<div class="box-info">
+    <div class="box-search">
+
+      <input id="name" type="text" [formControl]="name" placeholder="Search for location..">
+      <button (click)="updateName()">Search</button>
+      {{search}}
+      {{result}}
+      {{pos}}
+    </div>
+    </div>
+
+  <!--Box 2 - Heading info-->
+  <div class="box-heading">
+    <h2>
 
  <!--Box 1 - Search Bar-->
  <div class="box-info">
@@ -85,8 +100,6 @@
   x.addEventListener('submit', submitted);
   }
 </script>
-
-
 
 
 <!-- <script>
