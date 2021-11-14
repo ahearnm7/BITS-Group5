@@ -14,6 +14,7 @@ export class ChartdailyComponent implements OnInit {
 
 
   barChartData: ChartDataSets[] = [];
+  chartDataReady = false;
   barChartLabels: Label[] = ['FirstPlaceholder', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'LastPlaceholder'];
   barChartOptions: ChartOptions = {
     responsive: true,
@@ -62,8 +63,6 @@ export class ChartdailyComponent implements OnInit {
 
   constructor(firestore: Firestore) {
 
-    const col = collection(firestore, 'CaseNumbers');
-
     // ---  Set collection doc
     // const datachart = doc(col);
     // setDoc(doc(col, 'datachart'), { data: this.barChartData });
@@ -71,8 +70,9 @@ export class ChartdailyComponent implements OnInit {
     // ---  Get collection doc
     const colDaily = collection(firestore, 'CaseNumbers/');
     this.item$ = collectionData(colDaily);
-    this.item$.subscribe(x => {
-      this.barChartData = x[0].data;
+    this.item$.subscribe((x: DocumentData[]) => {
+      this.barChartData = x[0]?.data;
+      this.chartDataReady = true;
       console.log(x)
     });
   }
