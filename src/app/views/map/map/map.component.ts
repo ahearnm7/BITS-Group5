@@ -184,7 +184,6 @@ export class MapComponent implements OnInit {
       title: "Safe",
     });
 
-    // -37.99243186164386, 144.23306017111682
   }
 
 }
