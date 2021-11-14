@@ -22,6 +22,9 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessageComponent } from './views/message/message.component';
+import { AngularFireModule } from '@angular/fire/compat';
+
+
 
 
 @NgModule({
@@ -41,6 +44,7 @@ import { MessageComponent } from './views/message/message.component';
     AppRoutingModule,
     MatModule,
     ChartsModule,
+    AngularFireModule.initializeApp(environment.firebase),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
@@ -48,7 +52,7 @@ import { MessageComponent } from './views/message/message.component';
     provideFirestore(() => getFirestore())
   ],
   providers: [
-    ScreenTrackingService, UserTrackingService
+    ScreenTrackingService, UserTrackingService,
   ],
   bootstrap: [AppComponent]
 })
