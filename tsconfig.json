@@ -19,7 +19,11 @@
     "lib": [
       "es2018",
       "dom"
+    ],
+    "types": [
+      "googlemaps", "jest", "node"
     ]
+
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
