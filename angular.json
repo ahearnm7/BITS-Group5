@@ -24,6 +24,9 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/Covidify",
+            "allowedCommonJsDependencies": [
+              "chart.js"
+            ],
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -107,6 +110,16 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Covidify:build:production",
+            "firebaseProject": "covisulisers",
+            "firebaseHostingSite": "covidify"
           }
         }
       }

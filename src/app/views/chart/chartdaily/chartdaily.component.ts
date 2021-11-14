@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartDataSets, ChartOptions, ChartAnimationOptions, ChartType } from 'chart.js';
 import { Label, Colors } from 'ng2-charts';
+import { Firestore, collectionData, collection, DocumentData, doc, setDoc } from '@angular/fire/firestore';
+
+import { Observable } from 'rxjs';
+export interface Item { name: string; }
 @Component({
   selector: 'app-chartdaily',
   templateUrl: './chartdaily.component.html',
@@ -8,13 +12,9 @@ import { Label, Colors } from 'ng2-charts';
 })
 export class ChartdailyComponent implements OnInit {
 
-  barChartData: ChartDataSets[] = [{ data: [30, 50, 50, 60, 60, 65, 50, 52, 60, 50, 50, 50, 40, 38], label: 'Average Cases', type: "line" },
 
-  { data: [0, 65, 59, 60, 70, 88, 75, 77, 59, 55, 55, 54, 40, 0], label: 'Local Cases' }
-
-
-
-  ];
+  barChartData: ChartDataSets[] = [];
+  chartDataReady = false;
   barChartLabels: Label[] = ['FirstPlaceholder', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'LastPlaceholder'];
   barChartOptions: ChartOptions = {
     responsive: true,
@@ -58,7 +58,24 @@ export class ChartdailyComponent implements OnInit {
   ];
   barChartType: ChartType = 'bar';
   barChartLegend = true;
-  constructor() { }
+  item$: Observable<DocumentData[]>;
+
+
+  constructor(firestore: Firestore) {
+
+    // ---  Set collection doc
+    // const datachart = doc(col);
+    // setDoc(doc(col, 'datachart'), { data: this.barChartData });
+
+    // ---  Get collection doc
+    const colDaily = collection(firestore, 'CaseNumbers/');
+    this.item$ = collectionData(colDaily);
+    this.item$.subscribe((x: DocumentData[]) => {
+      this.barChartData = x[0]?.data;
+      this.chartDataReady = true;
+      console.log(x)
+    });
+  }
 
   ngOnInit(): void {
   }
