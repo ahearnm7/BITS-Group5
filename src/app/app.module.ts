@@ -23,6 +23,7 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessageComponent } from './views/message/message.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
