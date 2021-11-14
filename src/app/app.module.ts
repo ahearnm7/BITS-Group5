@@ -20,6 +20,7 @@ import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MessageComponent } from './views/message/message.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DashboardComponent,
     ChartdailyComponent,
     NavComponent,
-    LocationSearchComponent
+    LocationSearchComponent,
+    MessageComponent
   ],
   imports: [
     ReactiveFormsModule,
