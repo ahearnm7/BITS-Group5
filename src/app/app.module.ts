@@ -11,6 +11,7 @@ import { ChartdailyComponent } from './views/chart/chartdaily/chartdaily.compone
 import { ChartsModule } from 'ng2-charts';
 import { NavComponent } from './views/nav/nav/nav.component';
 import { LocationSearchComponent } from './views/location/location-search/location-search.component';
+import { MapComponent } from './views/map/map/map.component';
 
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
@@ -20,6 +21,8 @@ import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MessageComponent } from './views/message/message.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DashboardComponent,
     ChartdailyComponent,
     NavComponent,
-    LocationSearchComponent
+    LocationSearchComponent,
+    MapComponent,
+    MessageComponent
   ],
   imports: [
     ReactiveFormsModule,

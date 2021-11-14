@@ -20,11 +20,15 @@ app-location-search {
   grid-area: stats;
 }
 
-// Map placeholder area
-.map_placeholder {
+app-map {
   grid-area: map;
-  background-color: rgb(127, 208, 211);
 }
+
+// Map placeholder area
+//.map_placeholder {
+//  grid-area: map;
+//  background-color: rgb(127, 208, 211);
+//}
 // Search placeholder area
 // .search_placeholder {
 //   grid-area: search;
