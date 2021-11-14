@@ -14,44 +14,44 @@ export class LocationSearchComponent implements OnInit {
 
   // filterTerm!: string;
 
-    locations: ilocation[] = [
-    {name: "Coles", suburb: "Northcote", postcode: 3070, lastExposure: "15/10/21", monthExposure: 5, totalExposure: 15, timeExposure: 1900},
-    {name: "Bunnings", suburb: "Preston", postcode: 3072, lastExposure: "1/11/21", monthExposure: 7, totalExposure: 44, timeExposure: 1400}
-];
+  locations: ilocation[] = [
+    { name: "Coles", suburb: "Northcote", postcode: 3070, lastExposure: "15/10/21", monthExposure: 5, totalExposure: 15, timeExposure: 1900 },
+    { name: "Bunnings", suburb: "Preston", postcode: 3072, lastExposure: "1/11/21", monthExposure: 7, totalExposure: 44, timeExposure: 1400 }
+  ];
 
-// export class locations {
+  // export class locations {
 
-// filterTerm!: string;
+  // filterTerm!: string;
 
-// locations = [{
-//   "name": "Coles",
-//   "suburb": "Northcote",
-//   "Postcode": 3070,
-//   "lastExposure": "15/10/21",
-//   "monthExposure": 5,
-//   "totalExposure": 15,
-//   "timeExposure": 1900
-// },
-// {
-//   "name": "Bunnings",
-//   "suburb": "Preston",
-//   "Postcode": 3072,
-//   "lastExposure": "01/11/21",
-//   "monthExposure": 7,
-//   "totalExposure": 44,
-//   "timeExposure": 1400
-// }
-// ]
-// };
+  // locations = [{
+  //   "name": "Coles",
+  //   "suburb": "Northcote",
+  //   "Postcode": 3070,
+  //   "lastExposure": "15/10/21",
+  //   "monthExposure": 5,
+  //   "totalExposure": 15,
+  //   "timeExposure": 1900
+  // },
+  // {
+  //   "name": "Bunnings",
+  //   "suburb": "Preston",
+  //   "Postcode": 3072,
+  //   "lastExposure": "01/11/21",
+  //   "monthExposure": 7,
+  //   "totalExposure": 44,
+  //   "timeExposure": 1400
+  // }
+  // ]
+  // };
 
-name = new FormControl('');
+  name = new FormControl('');
 
-pos: any = 1;
+  pos: any = 1;
 
-search: any;
-result: any;
+  search: any;
+  result: any;
 
-  constructor(private locationsService:LocationsService) { }
+  constructor(private locationsService: LocationsService) { }
 
   ngOnInit(): void {
   }
@@ -59,29 +59,29 @@ result: any;
   updateName() {
 
     this.pos = this.name.value;
-    
+
   }
 
   //  function searchMatch(ilocation) {
   //   return this.locations.name === 'Coles';
- 
+
   updateName2() {
 
-     this.search = this.name.value;
+    this.search = this.name.value;
     //  this.result = this.locations.findIndex(this.search);
     //  this.pos = this.result;
 
     //  this. result = this.locations.indexOf(this.search);
     //  this.pos = this.result;
 
-   this.result = this.locations.findIndex(locations => locations.name == this.search);
+    this.result = this.locations.findIndex(locations => locations.name == this.search);
     this.pos = this.result;
-    
-  // updateName2() {
 
-  //    this.search = this.name.value;
-  //    this.result = this.locations.findIndex(this.search);
-  //    this.pos = this.result;
+    // updateName2() {
+
+    //    this.search = this.name.value;
+    //    this.result = this.locations.findIndex(this.search);
+    //    this.pos = this.result;
 
 
     //  this.result = this.locations.findIndex(function(item) {
@@ -91,12 +91,11 @@ result: any;
 
 
   }
-//  if (this.pos = -1) {
-   
-//  }
+  //  if (this.pos = -1) {
+
+  //  }
 
 }
 
-=======
 
 
