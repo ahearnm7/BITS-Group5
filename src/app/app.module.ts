@@ -10,7 +10,7 @@ import { ChartdailyComponent } from './views/chart/chartdaily/chartdaily.compone
 import { ChartsModule } from 'ng2-charts';
 import { NavComponent } from './views/nav/nav/nav.component';
 import { LocationSearchComponent } from './views/location/location-search/location-search.component';
-import { HelloWorldComponent } from './components/hello-world/hello-world.component';
+import { MapComponent } from './views/map/map/map.component';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { HelloWorldComponent } from './components/hello-world/hello-world.compon
     ChartdailyComponent,
     NavComponent,
     LocationSearchComponent,
-    HelloWorldComponent
+    MapComponent
   ],
   imports: [
     BrowserModule,

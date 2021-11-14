@@ -1,11 +1,12 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-hello-world',
-  templateUrl: './hello-world.component.html',
-  styleUrls: ['./hello-world.component.scss']
+  selector: 'app-map',
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.scss']
 })
-export class HelloWorldComponent implements OnInit {
+
+export class MapComponent implements OnInit {
 
   @ViewChild('googleMap', { static: true })
   googleMapRef!: ElementRef;
