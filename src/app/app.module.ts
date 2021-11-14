@@ -11,6 +11,7 @@ import { ChartdailyComponent } from './views/chart/chartdaily/chartdaily.compone
 import { ChartsModule } from 'ng2-charts';
 import { NavComponent } from './views/nav/nav/nav.component';
 import { LocationSearchComponent } from './views/location/location-search/location-search.component';
+import { MapComponent } from './views/map/map/map.component';
 
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
@@ -29,6 +30,7 @@ import { MessageComponent } from './views/message/message.component';
     ChartdailyComponent,
     NavComponent,
     LocationSearchComponent,
+    MapComponent,
     MessageComponent
   ],
   imports: [
