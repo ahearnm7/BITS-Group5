@@ -21,6 +21,11 @@ import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MessageComponent } from './views/message/message.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { LoginComponent } from './views/nav/login/login.component';
+
+
 
 @NgModule({
   declarations: [
@@ -29,7 +34,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ChartdailyComponent,
     NavComponent,
     LocationSearchComponent,
-    MapComponent
+    MapComponent,
+    MessageComponent,
+    LoginComponent
+
   ],
   imports: [
     ReactiveFormsModule,
@@ -38,6 +46,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     MatModule,
     ChartsModule,
+    AngularFireModule.initializeApp(environment.firebase),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
@@ -45,7 +54,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     provideFirestore(() => getFirestore())
   ],
   providers: [
-    ScreenTrackingService, UserTrackingService
+    ScreenTrackingService, UserTrackingService,
   ],
   bootstrap: [AppComponent]
 })
