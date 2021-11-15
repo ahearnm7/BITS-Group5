@@ -9,13 +9,22 @@ export class AuthService {
   user: any;
 
   constructor(public auth: AngularFireAuth) {
-    this.user = this.auth.user;
+    this.user = this.auth;
   }
-  login() {
+  login(email: string, pass: string) {
+    this.auth.signInWithEmailAndPassword(email, pass)
 
-    this.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
   logout() {
     this.auth.signOut();
   }
+  googleSigning() {
+    this.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+  }
+  signup(email: string, pass: string) {
+    this.auth.createUserWithEmailAndPassword(email, pass)
+
+  }
 }
+
+

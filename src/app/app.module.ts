@@ -23,6 +23,7 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessageComponent } from './views/message/message.component';
 import { AngularFireModule } from '@angular/fire/compat';
+import { LoginComponent } from './views/nav/login/login.component';
 
 
 
@@ -35,7 +36,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     NavComponent,
     LocationSearchComponent,
     MapComponent,
-    MessageComponent
+    MessageComponent,
+    LoginComponent
   ],
   imports: [
     ReactiveFormsModule,

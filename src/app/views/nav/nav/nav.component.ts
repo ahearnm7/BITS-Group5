@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import firebase from 'firebase/compat/app';
-import { AuthService } from 'src/app/services/auth.service';
 
+import { AuthService } from 'src/app/services/auth.service';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-nav',
@@ -12,14 +13,17 @@ import { AuthService } from 'src/app/services/auth.service';
 export class NavComponent {
   user: AuthService;
 
-  constructor(public auth: AuthService) {
+  constructor(public auth: AuthService, public dialog: MatDialog) {
     this.user = auth
   }
+  openDialog() {
+    const dialogRef = this.dialog.open(LoginComponent);
 
-  login() {
-    this.auth.login();
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
-  logout() {
+  signOut() {
     this.auth.logout();
   }
 }
