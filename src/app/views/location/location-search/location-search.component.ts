@@ -77,7 +77,7 @@ result: any;
     //  this. result = this.locations.indexOf(this.search);
     //  this.pos = this.result;
 
-   this.result = this.locations.findIndex(locations => locations.name == this.search && locations);
+   this.result = this.locations.findIndex(locations => locations.name == this.search);
     this.pos = this.result;
 
 
