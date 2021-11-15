@@ -45,8 +45,10 @@ export class LocationSearchComponent implements OnInit {
 // };
 
 name = new FormControl('');
+suburb = new FormControl('');
 
-pos: any = 1;
+
+pos: any = -2;
 
 search: any;
 result: any;
@@ -75,7 +77,7 @@ result: any;
     //  this. result = this.locations.indexOf(this.search);
     //  this.pos = this.result;
 
-   this.result = this.locations.findIndex(locations => locations.name == this.search);
+   this.result = this.locations.findIndex(locations => locations.name == this.search && locations);
     this.pos = this.result;
 
 
