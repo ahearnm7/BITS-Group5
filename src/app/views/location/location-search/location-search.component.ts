@@ -14,44 +14,46 @@ export class LocationSearchComponent implements OnInit {
 
   // filterTerm!: string;
 
-  locations: ilocation[] = [
-    { name: "Coles", suburb: "Northcote", postcode: 3070, lastExposure: "15/10/21", monthExposure: 5, totalExposure: 15, timeExposure: 1900 },
-    { name: "Bunnings", suburb: "Preston", postcode: 3072, lastExposure: "1/11/21", monthExposure: 7, totalExposure: 44, timeExposure: 1400 }
-  ];
+    locations: ilocation[] = [
+    {name: "Coles", suburb: "Northcote", postcode: 3070, lastExposure: "15/10/21", monthExposure: 5, totalExposure: 15, timeExposure: 1900},
+    {name: "Bunnings", suburb: "Preston", postcode: 3072, lastExposure: "1/11/21", monthExposure: 7, totalExposure: 44, timeExposure: 1400}
+];
 
-  // export class locations {
+// export class locations {
 
-  // filterTerm!: string;
+// filterTerm!: string;
 
-  // locations = [{
-  //   "name": "Coles",
-  //   "suburb": "Northcote",
-  //   "Postcode": 3070,
-  //   "lastExposure": "15/10/21",
-  //   "monthExposure": 5,
-  //   "totalExposure": 15,
-  //   "timeExposure": 1900
-  // },
-  // {
-  //   "name": "Bunnings",
-  //   "suburb": "Preston",
-  //   "Postcode": 3072,
-  //   "lastExposure": "01/11/21",
-  //   "monthExposure": 7,
-  //   "totalExposure": 44,
-  //   "timeExposure": 1400
-  // }
-  // ]
-  // };
+// locations = [{
+//   "name": "Coles",
+//   "suburb": "Northcote",
+//   "Postcode": 3070,
+//   "lastExposure": "15/10/21",
+//   "monthExposure": 5,
+//   "totalExposure": 15,
+//   "timeExposure": 1900
+// },
+// {
+//   "name": "Bunnings",
+//   "suburb": "Preston",
+//   "Postcode": 3072,
+//   "lastExposure": "01/11/21",
+//   "monthExposure": 7,
+//   "totalExposure": 44,
+//   "timeExposure": 1400
+// }
+// ]
+// };
 
-  name = new FormControl('');
+name = new FormControl('');
+suburb = new FormControl('');
 
-  pos: any = 1;
 
-  search: any;
-  result: any;
+pos: any = -2;
 
-  constructor(private locationsService: LocationsService) { }
+search: any;
+result: any;
+
+  constructor(private locationsService:LocationsService) { }
 
   ngOnInit(): void {
   }
