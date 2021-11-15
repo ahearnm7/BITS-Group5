@@ -4,10 +4,10 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-    "search map map map"
-    "chart map  map map"
     "stats map map map"
-    "stats map map map";
+    "stats map  map map"
+    "stats map map map"
+    "chart map map map";
   height: calc(100% - 47px);
   column-gap: 5px;
   row-gap: 5px;

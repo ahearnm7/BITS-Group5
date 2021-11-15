@@ -14,44 +14,48 @@ export class LocationSearchComponent implements OnInit {
 
   // filterTerm!: string;
 
-  locations: ilocation[] = [
-    { name: "Coles", suburb: "Northcote", postcode: 3070, lastExposure: "15/10/21", monthExposure: 5, totalExposure: 15, timeExposure: 1900 },
-    { name: "Bunnings", suburb: "Preston", postcode: 3072, lastExposure: "1/11/21", monthExposure: 7, totalExposure: 44, timeExposure: 1400 }
-  ];
 
-  // export class locations {
+    locations: ilocation[] = [
+    {name: "Coles", suburb: "Northcote", postcode: 3070, lastExposure: "15/10/21", monthExposure: 5, totalExposure: 15, timeExposure: 1900},
+    {name: "Bunnings", suburb: "Preston", postcode: 3072, lastExposure: "1/11/21", monthExposure: 7, totalExposure: 44, timeExposure: 1400}
+];
 
-  // filterTerm!: string;
+// export class locations {
 
-  // locations = [{
-  //   "name": "Coles",
-  //   "suburb": "Northcote",
-  //   "Postcode": 3070,
-  //   "lastExposure": "15/10/21",
-  //   "monthExposure": 5,
-  //   "totalExposure": 15,
-  //   "timeExposure": 1900
-  // },
-  // {
-  //   "name": "Bunnings",
-  //   "suburb": "Preston",
-  //   "Postcode": 3072,
-  //   "lastExposure": "01/11/21",
-  //   "monthExposure": 7,
-  //   "totalExposure": 44,
-  //   "timeExposure": 1400
-  // }
-  // ]
-  // };
+// filterTerm!: string;
 
-  name = new FormControl('');
+// locations = [{
+//   "name": "Coles",
+//   "suburb": "Northcote",
+//   "Postcode": 3070,
+//   "lastExposure": "15/10/21",
+//   "monthExposure": 5,
+//   "totalExposure": 15,
+//   "timeExposure": 1900
+// },
+// {
+//   "name": "Bunnings",
+//   "suburb": "Preston",
+//   "Postcode": 3072,
+//   "lastExposure": "01/11/21",
+//   "monthExposure": 7,
+//   "totalExposure": 44,
+//   "timeExposure": 1400
+// }
+// ]
+// };
 
-  pos: any = 1;
+name = new FormControl('');
+suburb = new FormControl('');
 
-  search: any;
-  result: any;
 
-  constructor(private locationsService: LocationsService) { }
+pos: any = -2;
+
+search: any;
+result: any;
+
+  constructor(private locationsService:LocationsService) { }
+
 
   ngOnInit(): void {
   }
@@ -73,6 +77,7 @@ export class LocationSearchComponent implements OnInit {
 
     //  this. result = this.locations.indexOf(this.search);
     //  this.pos = this.result;
+
 
     this.result = this.locations.findIndex(locations => locations.name == this.search);
     this.pos = this.result;

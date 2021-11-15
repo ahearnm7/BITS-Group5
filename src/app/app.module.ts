@@ -27,7 +27,6 @@ import { LoginComponent } from './views/nav/login/login.component';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +37,7 @@ import { LoginComponent } from './views/nav/login/login.component';
     MapComponent,
     MessageComponent,
     LoginComponent
+
   ],
   imports: [
     ReactiveFormsModule,
