@@ -11,6 +11,7 @@ import { ChartdailyComponent } from './views/chart/chartdaily/chartdaily.compone
 import { ChartsModule } from 'ng2-charts';
 import { NavComponent } from './views/nav/nav/nav.component';
 import { LocationSearchComponent } from './views/location/location-search/location-search.component';
+import { MapComponent } from './views/map/map/map.component';
 
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
@@ -21,13 +22,22 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { LoginComponent } from './views/nav/login/login.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ChartdailyComponent,
     NavComponent,
-    LocationSearchComponent
+    LocationSearchComponent,
+    MapComponent,
+
+    LoginComponent
+
   ],
   imports: [
     ReactiveFormsModule,
@@ -36,6 +46,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     MatModule,
     ChartsModule,
+    AngularFireModule.initializeApp(environment.firebase),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics()),
     provideAuth(() => getAuth()),
@@ -43,7 +54,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     provideFirestore(() => getFirestore())
   ],
   providers: [
-    ScreenTrackingService, UserTrackingService
+    ScreenTrackingService, UserTrackingService,
   ],
   bootstrap: [AppComponent]
 })

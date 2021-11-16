@@ -1,6 +1,11 @@
-<mat-toolbar class="mat-elevation-z8">
+<mat-toolbar>
   <img src="../assets/logo.png" width="45px" alt="Covidify logo" />
   <span>Covidify</span>
   <span class="toolbar-spacer"></span>
-  <button mat-raised-button>Login</button>
+  <div *ngIf="auth.user | async as user; else showLogin">
+    <button mat-raised-button (click)="signOut()">Logout</button>
+  </div>
+  <ng-template #showLogin>
+    <button mat-raised-button (click)="openDialog()">Login</button>
+  </ng-template>
 </mat-toolbar>
