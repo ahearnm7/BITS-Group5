@@ -1,4 +1,3 @@
-
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -23,14 +22,11 @@ app-location-search {
 app-map {
   grid-area: map;
 }
+// absolute positioning
+alert {
+  position: absolute;
+  top: 5vh;
+  left: 30%;
+  transform: translate(0%, 0%);
+}
 
-// Map placeholder area
-//.map_placeholder {
-//  grid-area: map;
-//  background-color: rgb(127, 208, 211);
-//}
-// Search placeholder area
-// .search_placeholder {
-//   grid-area: search;
-//   background-color: rgb(226, 179, 118);
-// }

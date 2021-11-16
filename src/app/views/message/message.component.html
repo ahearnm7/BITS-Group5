@@ -1,3 +1,8 @@
 
-
-<p>Is this being displayed anywhere ?</p>
+template: `
+    <div *ngIf="message>2; else elseBlock"><h2><p>
+    Warning: Information displayed for your searched location is not up to date.
+    </p></h2></div>
+    <ng-template #elseBlock><h2><p>
+    Information for your searched location is up to date.</p></h2>
+    </ng-template>
