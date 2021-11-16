@@ -1,4 +1,9 @@
 #google-map {
-  height: 95.5vh;
-  width: 74.7vw;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.map-container {
+  top: 47px;
+  height: 100%;
 }

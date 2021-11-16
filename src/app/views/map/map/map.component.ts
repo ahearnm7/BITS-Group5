@@ -34,6 +34,7 @@ export class MapComponent implements OnInit {
       position: { lat: -37.81513161171227, lng: 144.93942835432566 },
       map: this.map,
       title: "High Risk",
+
     });
 
     new google.maps.Marker({
