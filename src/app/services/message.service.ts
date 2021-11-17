@@ -13,7 +13,7 @@ import { Injectable } from '@angular/core';
 export class MessageService {
     // Just return a number
     getMessage(): number{
-        return 5;
+        return 3;
 
     }
     constructor() { }
