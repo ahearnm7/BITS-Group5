@@ -1,11 +1,8 @@
 .toolbar-spacer {
-  flex: 1 1 auto;
-}
-
-p {
-    color: white;
-    border: 5px;
-    border-style: solid;
-    border-color: #808080;
-    padding: 1rem;
-}
+    flex: 1 1 auto;
+  }
+  mat-toolbar {
+    max-height: 47px;
+    min-height: 47px;
+  }
+  

@@ -1,4 +1,3 @@
-import { MessageService } from './services/message.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -48,7 +47,7 @@ import { MessageComponent } from './views/message/message.component';
     provideFirestore(() => getFirestore())
   ],
   providers: [
-    ScreenTrackingService, UserTrackingService, MessageService
+    ScreenTrackingService, UserTrackingService
   ],
   bootstrap: [AppComponent]
 })
