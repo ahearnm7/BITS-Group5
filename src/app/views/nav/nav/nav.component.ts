@@ -14,7 +14,7 @@ export class NavComponent {
 
 
   constructor(public auth: AuthService, public dialog: MatDialog) {
-    console.log(this.auth.user);
+    // console.log(this.auth.user);
   }
   openDialog() {
     const dialogRef = this.dialog.open(LoginComponent);
