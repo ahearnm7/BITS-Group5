@@ -1,0 +1,13 @@
+.toolbar-spacer {
+ flex: 1 1 auto;
+}
+
+:host {
+    font-style: bold;
+    color: white;
+    font-size: 20px;
+    border: 5px;
+    //border-style: solid;
+    //border-color: white;
+    padding: 1rem; 
+}

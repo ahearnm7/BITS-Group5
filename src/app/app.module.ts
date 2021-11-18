@@ -24,6 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { LoginComponent } from './views/nav/login/login.component';
+import { MessageComponent } from './views/message/message.component';
+
 
 
 
@@ -35,9 +37,8 @@ import { LoginComponent } from './views/nav/login/login.component';
     NavComponent,
     LocationSearchComponent,
     MapComponent,
-
-    LoginComponent
-
+    LoginComponent,
+    MessageComponent
   ],
   imports: [
     ReactiveFormsModule,
