@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { MatDialog } from '@angular/material/dialog';
+import { AuthService } from 'src/app/services/auth.service';
 import { ilocation, LocationsService } from 'src/app/services/locations.service';
+import { SavesComponent } from '../../savesearch/saves/saves.component';
 // import { ilocation } from '../location';
 
 
@@ -15,48 +17,54 @@ export class LocationSearchComponent implements OnInit {
   // filterTerm!: string;
 
 
-    locations: ilocation[] = [
-    {name: "Coles", suburb: "Northcote", postcode: 3070, lastExposure: "15/10/21", monthExposure: 5, totalExposure: 15, timeExposure: 1900},
-    {name: "Bunnings", suburb: "Preston", postcode: 3072, lastExposure: "1/11/21", monthExposure: 7, totalExposure: 44, timeExposure: 1400}
-];
+  locations: ilocation[] = [
+    { name: "Coles", suburb: "Northcote", postcode: 3070, lastExposure: "15/10/21", monthExposure: 5, totalExposure: 15, timeExposure: 1900 },
+    { name: "Bunnings", suburb: "Preston", postcode: 3072, lastExposure: "1/11/21", monthExposure: 7, totalExposure: 44, timeExposure: 1400 }
+  ];
 
-// export class locations {
+  // export class locations {
 
-// filterTerm!: string;
+  // filterTerm!: string;
 
-// locations = [{
-//   "name": "Coles",
-//   "suburb": "Northcote",
-//   "Postcode": 3070,
-//   "lastExposure": "15/10/21",
-//   "monthExposure": 5,
-//   "totalExposure": 15,
-//   "timeExposure": 1900
-// },
-// {
-//   "name": "Bunnings",
-//   "suburb": "Preston",
-//   "Postcode": 3072,
-//   "lastExposure": "01/11/21",
-//   "monthExposure": 7,
-//   "totalExposure": 44,
-//   "timeExposure": 1400
-// }
-// ]
-// };
+  // locations = [{
+  //   "name": "Coles",
+  //   "suburb": "Northcote",
+  //   "Postcode": 3070,
+  //   "lastExposure": "15/10/21",
+  //   "monthExposure": 5,
+  //   "totalExposure": 15,
+  //   "timeExposure": 1900
+  // },
+  // {
+  //   "name": "Bunnings",
+  //   "suburb": "Preston",
+  //   "Postcode": 3072,
+  //   "lastExposure": "01/11/21",
+  //   "monthExposure": 7,
+  //   "totalExposure": 44,
+  //   "timeExposure": 1400
+  // }
+  // ]
+  // };
 
-name = new FormControl('');
-suburb = new FormControl('');
-
-
-pos: any = -2;
-
-search: any;
-result: any;
-
-  constructor(private locationsService:LocationsService) { }
+  name = new FormControl('');
+  suburb = new FormControl('');
 
 
+  pos: any = -2;
+
+  search: any;
+  result: any;
+
+  constructor(private locationsService: LocationsService, public authservice: AuthService, public dialog: MatDialog) { }
+
+  openSaveDialog(): void {
+    const dialogRef = this.dialog.open(SavesComponent);
+
+    dialogRef.afterClosed().subscribe((result: any) => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
   ngOnInit(): void {
   }
 
