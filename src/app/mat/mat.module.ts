@@ -9,7 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import { MatButtonToggleModule } from '@angular/material/button-toggle'
 const matComp = [
 
   BrowserAnimationsModule,
@@ -21,7 +21,8 @@ const matComp = [
   MatToolbarModule,
   MatDialogModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatButtonToggleModule
 
 ]
 
