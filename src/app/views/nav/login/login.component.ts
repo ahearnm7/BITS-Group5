@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
-import { AbstractControl, FormBuilder, FormControl, Validators } from '@angular/forms';
-
+import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 
 
@@ -12,12 +11,20 @@ import { AbstractControl, FormBuilder, FormControl, Validators } from '@angular/
 })
 export class LoginComponent {
   user: AuthService;
-  signup: boolean;
+  signup: boolean = false;
+  isSubmitted = false;
+  authForm: FormGroup;
 
-  constructor(public auth: AuthService, private fb: FormBuilder) {
-    this.user = auth
-    this.signup = true;
+  constructor(public authservice: AuthService, private fb: FormBuilder) {
+    this.user = authservice.user;
+    this.authForm = this.fb.group({
+      username: [''],
+      emailFormControl: ['', [Validators.required, Validators.email]],
+      passFormControl: ['', [Validators.required, Validators.minLength(8)]]
+    });
+
   }
+
 
   isSignedUp() {
     if (this.signup) {
@@ -27,26 +34,33 @@ export class LoginComponent {
     }
   }
   signUp(email: string, pass: string) {
-    this.auth.signup(email, pass);
+    this.authservice.signup(email, pass);
   }
   login(email: string, pass: string) {
-    this.auth.login(email, pass);
+    this.authservice.login(email, pass);
   }
   logout() {
-    this.auth.logout();
+    this.authservice.logout();
   }
   googleLogin() {
-    this.auth.googleSigning();
+    this.authservice.googleSigning();
   }
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
-  passFormControl = new FormControl('', [Validators.required, Validators.minLength(8)]);
-  password2 = new FormControl('', [Validators.required]);
+
+
 
   onSubmit() {
-    if (this.signup) {
-      this.signUp(this.emailFormControl.value, this.passFormControl.value);
+    // signing in
+    if (!this.signup) {
+      if (this.authForm.valid) {
+        this.authservice.login(this.authForm.get('emailFormControl')?.value, this.authForm.get('passFormControl')?.value);
+      }
     } else {
-      this.login(this.emailFormControl.value, this.passFormControl.value);
+      // signing up
+      this.signup = false;
+      if (this.authForm.valid) {
+        this.authservice.signup(this.authForm.get('emailFormControl')?.value, this.authForm.get('passFormControl')?.value);
+      }
+
     }
   }
 }
