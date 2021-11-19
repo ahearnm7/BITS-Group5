@@ -1,4 +1,16 @@
 <div class="box-heading">
+  <div class="example-button-row">
+    <button class="butt" (click)="dailyChart()" mat-stroked-button>
+      Daily
+    </button>
+    <button class="butt" (click)="MonthlyChart()" mat-stroked-button>
+      Monthly
+    </button>
+    <button class="butt" (click)="AllTimeChart()" mat-stroked-button>
+      To Date
+    </button>
+  </div>
+
   <canvas
     *ngIf="chartDataReady"
     baseChart

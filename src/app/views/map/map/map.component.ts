@@ -26,6 +26,7 @@ export class MapComponent implements OnInit {
       // Centered to Melbourne
       center: new google.maps.LatLng(-37.81513161171227, 144.93942835432566),
       zoom: 9,
+
     };
 
     this.map = new google.maps.Map(this.googleMapRef.nativeElement, mapOptions);

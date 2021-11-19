@@ -11,10 +11,10 @@ import { LoginComponent } from '../login/login.component';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
-  user: AuthService;
+
 
   constructor(public auth: AuthService, public dialog: MatDialog) {
-    this.user = auth
+    // console.log(this.auth.user);
   }
   openDialog() {
     const dialogRef = this.dialog.open(LoginComponent);
