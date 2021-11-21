@@ -20,6 +20,12 @@ app-map {
   grid-area: map;
 }
 
+alert {
+  position: absolute;
+  top: 50vh;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
 // Map placeholder area
 //.map_placeholder {
 //  grid-area: map;
