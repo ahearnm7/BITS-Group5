@@ -38,7 +38,8 @@ import { MessageComponent } from './views/message/message.component';
     LocationSearchComponent,
     MapComponent,
     LoginComponent,
-    MessageComponent
+    MessageComponent,
+    SavesComponent
   ],
   imports: [
     ReactiveFormsModule,
