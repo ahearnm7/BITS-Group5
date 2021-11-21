@@ -28,7 +28,6 @@ import { SavesComponent } from './views/savesearch/saves/saves.component';
 import { MessageComponent } from './views/message/message.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +37,9 @@ import { MessageComponent } from './views/message/message.component';
     LocationSearchComponent,
     MapComponent,
     LoginComponent,
-    MessageComponent
+    MessageComponent,
+    SavesComponent
+
   ],
   imports: [
     ReactiveFormsModule,

@@ -10,11 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class MessageComponent {
   message: number;
 
-  constructor(private messageservice: MessageService) { 
+  constructor(private messageservice: MessageService) {
     this.message = this.messageservice.getMessage();
   }
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-
 }
