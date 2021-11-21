@@ -9,5 +9,5 @@ export class MessageService {
 
     return 5;
 
-  constructor() { }
+  }
 }
